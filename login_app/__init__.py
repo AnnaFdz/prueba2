@@ -61,7 +61,7 @@ def init_app():
         return usuarios
     @app.route('/about_us')
     def about():
-        return 'acerca de nosotros'
+        return 'acerca de '
     return app
     
     
