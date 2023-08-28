@@ -59,7 +59,9 @@ def init_app():
             for row in reader:
                 usuarios[row[0]] = row[1]
         return usuarios
-
+    @app.route('/about_us')
+    def about():
+        return 'acerca de nosotros'
     return app
     
     
