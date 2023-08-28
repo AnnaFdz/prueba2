@@ -15,7 +15,7 @@ def init_app():
     @app.route('/academia')
     @app.route('/home')
     def bienvenida():
-        return 'Bienvenido a Academia!'
+        return 'Bienvenido a la Academia!'
     @app.route('/help/')
     def help():
         return 'Soporte de la aplicación'
