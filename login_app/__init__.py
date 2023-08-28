@@ -15,7 +15,7 @@ def init_app():
     @app.route('/academia')
     @app.route('/home')
     def bienvenida():
-        return 'Bienvenido a Programacion 2!'
+        return 'Bienvenido a la Academia!'
     @app.route('/help/')
     def help():
         return 'Soporte de la aplicación'
@@ -59,7 +59,9 @@ def init_app():
             for row in reader:
                 usuarios[row[0]] = row[1]
         return usuarios
-
+    @app.route('/about_us')
+    def about():
+        return 'acerca de '
     return app
     
     
